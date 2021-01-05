@@ -3,9 +3,13 @@ const { read } = require("../utilities/import");
 // find product of two numbers that sum to 2020
 
 // access the list of numbers
-const nums = read("./day1data-alexandra")
+const nums = read("./day1data-aditi")
   .split("\n")
   .map((n) => parseInt(n));
+
+// const nums = read("./day1data-alexandra")
+//   .split("\n")
+//   .map((n) => parseInt(n));
 
 const sortedData = nums.sort((a, b) => a - b);
 
@@ -32,6 +36,6 @@ const main = () => productOfTwoItemArray(find2020(sortedData));
 // look through each potential pairing to see if it sums to 2020
 // if it does, return value of the product
 
-console.log(main());
+// console.log(main());
 
-// module.exports = { find2020 };
+module.exports = { sortedData };
